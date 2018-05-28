@@ -1,0 +1,7 @@
+host=172.26.255.22
+port=23
+username=jnwhzx
+password=fttxtb
+path=ZBL9312-1(KD)
+finish=q
+ipsFileName=00ips.txt
