@@ -1,0 +1,144 @@
+{
+  "personal_information": {
+    "title": "个人信息",
+    "birthday": "1987-06-05",
+    "marital-status": "已婚",
+    "mobile": "18007197645",
+    "nationality": "中国",
+    "email": "liuxiaoli2world@gmail.com",
+    "hukou": "武汉"
+  },
+  "career-preference": {
+    "title": "个人技能",
+    "expected-industry": [],
+    "expected-position": ["web前端开发工程师"],
+    "expected-location": "",
+    "expected-income": "",
+    "current-income": ""
+  },
+  "work-experience": {
+    "title": "工作经历",
+    "content": [
+      {
+        "company-id": "8004",
+        "company-name": "武汉理工数字传播工程有限公司",
+        "company-homepage": "http://www.dcrays.cn/",
+        "industry": "",
+        "position": "web前端开发工程师",
+        "company-locations": "武汉市洪山区街道口",
+        "subordinate": 3,
+        "start-time": "2017-04",
+        "end-time": "2018-04",
+        "responsibilities": [],
+        "achievement": []
+      },
+      {
+        "company-id": "8003",
+        "company-name": "武大吉奥信息技术有限公司",
+        "company-homepage": "http://www.geostar.com.cn/",
+        "industry": "",
+        "position": "web前端开发工程师",
+        "company-locations": "武汉市东湖高新区大学园路",
+        "subordinate": 3,
+        "start-time": "2016-07",
+        "end-time": "2017-04",
+        "responsibilities": [],
+        "achievement": []
+      },
+      {
+        "company-id": "8002",
+        "company-name": "远光软件股份有限公司",
+        "company-homepage": "http://www.ygsoft.com/",
+        "industry": "",
+        "position": "软件开发工程师",
+        "company-locations": "武汉市东湖高新区光谷金融港",
+        "subordinate": 3,
+        "start-time": "2013-07",
+        "end-time": "2016-06",
+        "responsibilities": [],
+        "achievement": []
+      },
+      {
+        "company-id": "8001",
+        "company-name": "浙江核新同花顺网络信息股份有限公司",
+        "company-homepage": "http://www.10jqka.com.cn/",
+        "industry": "",
+        "position": "web前端开发工程师",
+        "company-locations": "武汉市洪山区街道口",
+        "subordinate": 3,
+        "start-time": "2017-04",
+        "end-time": "2018-04",
+        "responsibilities": [],
+        "achievement": []
+      }
+    ]
+  },
+  "education": {
+    "title": "教育背景",
+    "content": [
+      {
+        "university": "武汉科技大学",
+        "major": "计算机软件与理论",
+        "start-time": "2009-09",
+        "end-time": "2012-06",
+        "degree": "硕士研究生",
+        "type": "统招"
+      },
+      {
+        "university": "武汉科技大学",
+        "major": "计算机科学与技术",
+        "start-time": "2005-09",
+        "end-time": "2009-06",
+        "degree": "本科",
+        "type": "统招"
+      }
+    ]
+  },
+  "project-experience": {
+    "title": "项目经验",
+    "content": [
+      {
+        "project-name": "",
+        "company-name": "",
+        "project-position": "",
+        "start-time": "",
+        "end-time": "",
+        "description": "",
+        "responsibilities": [],
+        "achievement": []
+      }
+    ]
+  },
+  "honor": {
+    "title": "获奖经历",
+    "content": [
+      {
+        "date": "",
+        "name": "",
+        "level": ""
+      }
+    ]
+  },
+  "interests": {
+    "title": "兴趣爱好",
+    "content": [
+      {
+        "name": "",
+        "description": ""
+      }
+    ]
+  },
+  "self-description": {
+    "title": "自我评价",
+    "description": ""
+  },
+  "additional-info": {
+    "title": "其他信息",
+    "content": [
+      {
+        "name": "",
+        "description": ""
+      }
+    ]
+  }
+}

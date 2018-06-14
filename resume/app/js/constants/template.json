@@ -1,0 +1,91 @@
+{
+  "personal_information": {
+    "title": "个人信息",
+    "birthday": "",
+    "marital-status": "Married",
+    "mobile": "18007197645",
+    "nationality": "China",
+    "email": "liuxiaoli2world@gmail.com",
+    "hukou": "WuHan"
+  },
+  "career-preference": {
+    "title": "个人技能",
+    "expected-industry": [],
+    "expected-position": [],
+    "expected-location": "",
+    "expected-income": "",
+    "current-income": ""
+  },
+  "work-experience": {
+    "title": "工作经历",
+    "content": [
+      {
+        "company-id": "",
+        "company-name": "",
+        "company-homepage": "",
+        "industry": "",
+        "position": "",
+        "company-locations": "",
+        "subordinate": 0,
+        "start-time": "",
+        "end-time": "",
+        "responsibilities": [],
+        "achievement": []
+      }
+    ]
+  },
+  "education": {
+    "title": "教育背景",
+    "content": [
+      {
+        "university": "",
+        "major": "",
+        "start-time": "",
+        "end-time": "",
+        "degree": "",
+        "type": ""
+      }
+    ]
+  },
+  "project-experience": {
+    "title": "项目经验",
+    "content": [
+      {
+        "project-name": "",
+        "company-name": "",
+        "project-position": "",
+        "start-time": "",
+        "end-time": "",
+        "description": "",
+        "responsibilities": [],
+        "achievement": []
+      }
+    ]
+  },
+  "honor": {
+    "title": "获奖经历",
+    "content": [{
+      "date": "",
+      "name": "",
+      "level": ""
+    }]
+  },
+  "interests": {
+    "title": "兴趣爱好",
+    "content": [{
+      "name": "",
+      "description": ""
+    }]
+  },
+  "self-description": {
+    "title": "自我评价",
+    "description": ""
+  },
+  "additional-info": {
+    "title": "其他信息",
+    "content": [{
+      "name": "",
+      "description": ""
+    }]
+  }
+}
