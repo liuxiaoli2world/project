@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import BaseLayout from './clients/pages/Layout'
-// import App from './App'
-
-const App =  () =>(
-  <BrowserRouter>
-    <BaseLayout />
-  </BrowserRouter>
-)
+// import { BrowserRouter } from 'react-router-dom'
+// import BaseLayout from './clients/pages/Layout'
+import App from './App'
+console.log(App)
+// const App1 = (
+//   <BrowserRouter>
+//     <BaseLayout />
+//   </BrowserRouter>
+// )
 ReactDOM.render(<App />, document.getElementById('app'))

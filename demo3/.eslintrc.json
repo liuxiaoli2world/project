@@ -6,9 +6,7 @@
     "node": true
   },
   "extends": "eslint:recommended",
-  "plugins": [
-    "html"
-  ],
+  "plugins": ["html", "react", "babel"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -20,6 +18,7 @@
     "linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
-    "no-console": "off"
+    "no-console": "off",
+    "no-unused-vars": "warn"
   }
 }
