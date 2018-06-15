@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import PersonalInfoPage from './pages/PersonalInfoPage';
 import CareerPrefPage from './pages/CareerPrefPage';
@@ -14,28 +14,28 @@ const App = () => (
   <div>
     <ul>
       <li>
-        <Link to="/personal">基本信息</Link>
+        <NavLink to="/personal" activeClassName="caaa">基本信息</NavLink>
       </li>
       <li>
-        <Link to="/career">个人技能</Link>
+        <NavLink to="/career" activeClassName="caaa">个人技能</NavLink>
       </li>
       <li>
-        <Link to="/education">教育信息</Link>
+        <NavLink to="/education" activeClassName="caaa">教育信息</NavLink>
       </li>
       <li>
-        <Link to="/work">工作经历</Link>
+        <NavLink to="/work" activeClassName="caaa">工作经历</NavLink>
       </li>
       <li>
-        <Link to="/project">项目经验</Link>
+        <NavLink to="/project" activeClassName="caaa">项目经验</NavLink>
       </li>
       <li>
-        <Link to="/honor">获奖经历</Link>
+        <NavLink to="/honor" activeClassName="caaa">获奖经历</NavLink>
       </li>
       <li>
-        <Link to="/interest">兴趣爱好</Link>
+        <NavLink to="/interest" activeClassName="caaa">兴趣爱好</NavLink>
       </li>
       <li>
-        <Link to="/self">个人寄语</Link>
+        <NavLink to="/self" activeClassName="caaa">个人寄语</NavLink>
       </li>
     </ul>
     <Route path="/home" exact component={HomePage} />
