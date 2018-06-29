@@ -1,12 +1,17 @@
 {
   "personal_information": {
     "title": "个人信息",
+    "name": "刘晓黎",
+    "gender": "女",
     "birthday": "1987-06-05",
-    "marital-status": "已婚",
+    "degree": "硕士",
+    "date2Work": "2012-07",
+    "politicStatus": "中共党员",
+    "presentLocus": "武汉市江岸区",
+    "maritalStatus": "Married",
     "mobile": "18007197645",
-    "nationality": "中国",
-    "email": "liuxiaoli2world@gmail.com",
-    "hukou": "武汉"
+    "nationality": "China",
+    "email": "liuxiaoli2world@gmail.com"
   },
   "career-preference": {
     "title": "个人技能",
