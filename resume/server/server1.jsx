@@ -1,13 +1,12 @@
-import path from 'path';
+// import path from 'path';
 import Express from 'express';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from '../app/js/reducers/rootReducer';
+import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
-import RootRouter from '../app/js/Router';
-
-const data = require('./data/data.json');
+import rootReducer from '../app/js/reducers/rootReducer';
+import App from '../app/js/App';
 
 const app = Express();
 
@@ -27,7 +26,6 @@ function renderFullPage(html, preloadedState) {
         // http://redux.js.org/recipes/ServerRendering.html#security-considerations
         window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
       </script>
-      <script src="/static/bundle.js"></script>
     </body>
   </html>
   `;
@@ -35,29 +33,16 @@ function renderFullPage(html, preloadedState) {
 
 function handleRender(req, res) {
   const store = createStore(rootReducer);
-  const html = renderToString(<Provider store={store}>
-    <RootRouter />
-                              </Provider>);
-
+  const context = {};
+  const html = renderToString(
+    <Provider store={store}>
+      <StaticRouter location={req.url} context={context}><App /></StaticRouter>
+    </Provider>);
   const preloadedState = store.getState();
   res.send(renderFullPage(html, preloadedState));
 }
 
 app.use(handleRender);
 
-// 设置跨域访问
-app.all('*', (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'X-Requested-With');
-  res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS');
-  res.header('X-Powered-By', ' 3.2.1');
-  res.header('Content-Type', 'application/json;charset=utf-8');
-  next();
-});
-
-app.get('/personalInfo', (req, res) => {
-  res.send(data.personal_information);
-});
-
-const port = 8090;
+const port = 8080;
 app.listen(port, () => console.log(`Server is running on port ${port}.`));
