@@ -1,0 +1,246 @@
+body {
+  width: 1200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: red;
+}
+
+.parent {
+  padding: 100px;
+  border: 10px solid green;
+  background: blue;
+  margin: 10px;
+}
+
+.parent1 {
+  height: 100px;
+  background: yellow;
+  padding: 20px;
+}
+.son1 {
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+  background: green;
+}
+.parent2 {
+  overflow: hidden;
+}
+.parent2 > p {
+  float: left;
+  margin-right: 130px;
+}
+.parent2 > img {
+  float: left;
+  width: 128px;
+  margin-left: -128px;
+}
+
+.parent3 {
+  background: yellow;
+}
+
+.parent3 > span {
+  margin: 0px;
+  background: pink;
+  padding: 10px;
+}
+
+.parent3 > div {
+  width: 50%;
+  margin: 0px;
+  background: green;
+  padding: 10%;
+}
+
+.parent4 {
+  background: pink;
+  white-space: nowrap;
+}
+
+.parent5 {
+  background: gray;
+  height: 100px;
+  overflow: auto;
+}
+
+.parent5 > img {
+  margin: 50px 0;
+}
+
+.parent6 > input {
+  white-space: normal;
+}
+.parent7 {
+  background: gold;
+  width: 200px;
+  margin: 200px 0;
+}
+.parent7 > span {
+  padding: 100px;
+  background: gray;
+}
+
+.parent8 a+a:before {
+  content: '';
+  font-size: 0;
+  border-left: 1px solid blue;
+  padding: 10px 3px 1px;
+  margin-left: 6px;
+}
+
+.parent9 {
+  margin-top: 100px;
+  height: 80px;
+  background: pink;
+  position: relative;
+  text-align: center;
+}
+.parent9 div {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  position: absolute;
+  background: yellow;
+  margin: auto;
+}
+
+.parent10 > span{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  color: gray;
+  border:  2px dashed;
+  position: relative;
+}
+
+.parent10 > span:before {
+  content: "";
+  border-top: 4px solid;
+  width: 24px;
+  margin-left: -10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.parent10 > span:after {
+  content: "";
+  border-left: 4px solid;
+  margin-top: -10px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.parent10 > span:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.parent11 {
+  background: #fff;
+  border-left: 150px solid gray;
+  height: 300px;
+}
+
+.parent11 .nav {
+  float: left;
+  margin-left: -150px;
+  width: 150px;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  color: #fff;
+}
+.parent11 .nav>li {
+  border-bottom: 1px solid;
+  margin-top: 8px;
+  width: 100%;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.parent11 .nav>li:hover {
+  color: yellow;
+}
+.parent12 {
+  height: 100px;
+  background: yellow;
+}
+.parent12>span.son1 {
+  display: inline-block;
+  width:0;
+  height: 0;
+  border: 40px solid;
+  border-color: red green blue gray;  
+}
+.parent12>span.son2 {
+  display: inline-block;
+  border-width: 40px 10px 90px 30px;
+  border-style: solid;
+  width:0;
+  height: 0;
+  border-color: red transparent transparent;
+}
+.parent13 {
+  background: gray;
+  height: 100px;
+}
+.parent13 p {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+  background: yellow;
+}
+.parent14 {
+  margin: 20px 0;
+  padding: 20px;
+  background: gray;
+}
+.parent14 img {
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: gray;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+}
+.container .dialog {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  display: inline-block;
+  vertical-align: middle;
+}
+.father {
+  background: gray;
+  height: 100%;
+  margin-right: -50px;
+}
+
+.son {
+  margin-right: 50px;
+  height: 100px;
+  width: 300px;
+  background: blue;
+  float: left;
+}

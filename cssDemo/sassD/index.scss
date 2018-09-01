@@ -1,0 +1,9 @@
+$color: #c2c2c2;
+
+h1 {
+  display: flex;
+  color: $color;
+  background: hsla(200, 50%,30%,.6);
+  border: 1px solid hsla(300, 20%,70%,.8);
+  border-radius: 4px;
+}
