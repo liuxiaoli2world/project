@@ -2,10 +2,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const config = {
   mode: 'production',
   entry: {
-    index: './client/index.js'
+    index: './client/index.js',
   },
   output: {
     path: path.join(__dirname, 'build'),
@@ -15,7 +16,7 @@ const config = {
     rules: [{
       test: /.(js|jsx)$/,
       exclude: /node_modules/,
-      use: ['babel-loader']
+      use: ['babel-loader'],
     }],
   },
   plugins: [
@@ -27,13 +28,14 @@ const config = {
   devServer: {
     port: 8080,
     host: '0.0.0.0',
-    hot: true
-  }
-}
+    hot: true,
+  },
+};
 
-if(process.env.NODE_ENV === 'production') {
-}else {
-  // config.plugins.push(new webpack.hotModuleReplacementPlugin())
+if (process.env.NODE_ENV === 'production') {
+  console.log('if statement');
+} else {
+  config.plugins.push(new webpack.HotModuleReplacementPlugin());
 }
 
 module.exports = config;
