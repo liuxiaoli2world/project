@@ -2,6 +2,10 @@
   "presets": ["react", "env"],
   "plugins": [
     "transform-runtime",
-    "syntax-object-rest-spread"
+    "syntax-object-rest-spread",
+    [
+      "import",
+      { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }
+    ]
   ]
 }
