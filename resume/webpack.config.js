@@ -4,16 +4,21 @@ const webpack = require('webpack');
 
 const config = {
   mode: 'development',
-  entry: path.join(__dirname, 'app/js/index.jsx'),
+  entry: {
+    portal: path.join(__dirname, 'app/js/index.jsx'),
+    manage: path.join(__dirname, 'managePages/index.jsx'),
+  },
   output: {
-    filename: 'js/index-[hash:8].js',
+    filename: 'js/[name]-[hash:8].js',
     path: path.join(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /.(js|jsx)$/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+        },
         exclude: /node_modules/,
       },
       {
@@ -29,8 +34,26 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, 'home.html'),
+      template: path.resolve(__dirname, 'portal.html'),
+      title: '个人简历门户',
+      inject: true,
+      chunks: ['portal'],
+      minify: {
+        html5: true,
+        collapseWhitespace: true,
+        // conservativeCollapse: true,
+        removeComments: true,
+        removeTagWhitespace: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'manage.html',
+      title: '后台管理页面',
+      template: path.resolve(__dirname, 'portal.html'),
       inject: 'body',
+      chunks: ['manage'],
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],

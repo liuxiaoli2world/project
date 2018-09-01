@@ -36,8 +36,8 @@ class PersonalInfoPage extends React.Component {
         个人信息：
         <br />
         {
-          config.map(item =>
-             (<div><span>{item.displayName}：</span><span>{props[item.prop]}</span></div>))
+          config.map((item, i) =>
+             (<div key={i}><span>{item.displayName}：</span><span>{props[item.prop]}</span></div>))
         }
         <button onClick={() => this.props.handleAdd({ husband: '王煊' })}>新增</button>
         <button onClick={() => this.props.handleUpdate({ age: 31 })}>修改</button>

@@ -9,6 +9,7 @@ react react-redux react-router
 
 ## 优化
 
+
 ## 服务端渲染
 
 ### 缓存
@@ -16,3 +17,5 @@ react react-redux react-router
 ### 显示可配置
 
 ### 国际化
+
+## 注册登录 权限配置
