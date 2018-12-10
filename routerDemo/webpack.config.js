@@ -52,6 +52,7 @@ const config = {
 if (isDev) {
   config.devtool = 'cheap-module-eval-source-map'
   config.devServer = {
+    historyApiFallback: true,
     port: 8080,
     host: '0.0.0.0',
     hot: true,
